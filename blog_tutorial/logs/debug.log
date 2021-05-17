@@ -1,0 +1,371 @@
+
+ERROR 2021-05-02 17:23:23,339 log 21732 7664 Internal Server Error: /accounts/weibo/login/
+Traceback (most recent call last):
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\allauth\socialaccount\providers\oauth2\views.py", line 73, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\allauth\socialaccount\providers\oauth2\views.py", line 96, in dispatch
+    app = provider.get_app(self.request)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\allauth\socialaccount\providers\base.py", line 52, in get_app
+    return SocialApp.objects.get_current(self.id, request)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\allauth\socialaccount\models.py", line 34, in get_current
+    provider=provider)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\db\models\query.py", line 408, in get
+    self.model._meta.object_name
+allauth.socialaccount.models.SocialApp.DoesNotExist: SocialApp matching query does not exist.
+ERROR 2021-05-02 17:24:38,397 log 22436 12040 Internal Server Error: /accounts/weibo/login/
+Traceback (most recent call last):
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\allauth\socialaccount\providers\oauth2\views.py", line 73, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\allauth\socialaccount\providers\oauth2\views.py", line 96, in dispatch
+    app = provider.get_app(self.request)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\allauth\socialaccount\providers\base.py", line 52, in get_app
+    return SocialApp.objects.get_current(self.id, request)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\allauth\socialaccount\models.py", line 34, in get_current
+    provider=provider)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\db\models\query.py", line 408, in get
+    self.model._meta.object_name
+allauth.socialaccount.models.SocialApp.DoesNotExist: SocialApp matching query does not exist.
+ERROR 2021-05-02 17:34:41,329 log 22976 10056 Internal Server Error: /accounts/signup/
+Traceback (most recent call last):
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\views\decorators\debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\allauth\account\views.py", line 214, in dispatch
+    return super(SignupView, self).dispatch(request, *args, **kwargs)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\allauth\account\views.py", line 80, in dispatch
+    **kwargs)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\allauth\account\views.py", line 192, in dispatch
+    **kwargs)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\allauth\account\views.py", line 103, in post
+    response = self.form_valid(form)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\allauth\account\views.py", line 235, in form_valid
+    self.get_success_url())
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\allauth\account\utils.py", line 183, in complete_signup
+    signal_kwargs=signal_kwargs)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\allauth\account\utils.py", line 143, in perform_login
+    send_email_confirmation(request, user, signup=signup)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\allauth\account\utils.py", line 314, in send_email_confirmation
+    signup=signup)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\allauth\account\models.py", line 60, in send_confirmation
+    confirmation.send(request, signup=signup)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\allauth\account\models.py", line 166, in send
+    get_adapter(request).send_confirmation_mail(request, self, signup)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\allauth\account\adapter.py", line 450, in send_confirmation_mail
+    ctx)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\allauth\account\adapter.py", line 137, in send_mail
+    msg.send()
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\mail\message.py", line 291, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\mail\backends\smtp.py", line 103, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\mail\backends\smtp.py", line 63, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "d:\python 3.7.4\lib\smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "d:\python 3.7.4\lib\smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "d:\python 3.7.4\lib\smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "d:\python 3.7.4\lib\socket.py", line 707, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "d:\python 3.7.4\lib\socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+ERROR 2021-05-02 18:00:25,393 log 5380 1608 Internal Server Error: /accounts/password/reset/
+Traceback (most recent call last):
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\allauth\account\views.py", line 103, in post
+    response = self.form_valid(form)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\allauth\account\views.py", line 644, in form_valid
+    form.save(self.request)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\allauth\account\forms.py", line 540, in save
+    context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\allauth\account\adapter.py", line 137, in send_mail
+    msg.send()
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\mail\message.py", line 291, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\mail\backends\smtp.py", line 103, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\mail\backends\smtp.py", line 63, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "d:\python 3.7.4\lib\smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "d:\python 3.7.4\lib\smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "d:\python 3.7.4\lib\smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "d:\python 3.7.4\lib\socket.py", line 707, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "d:\python 3.7.4\lib\socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+ERROR 2021-05-02 18:00:47,000 log 5380 1608 Internal Server Error: /accounts/password/reset/
+Traceback (most recent call last):
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\allauth\account\views.py", line 103, in post
+    response = self.form_valid(form)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\allauth\account\views.py", line 644, in form_valid
+    form.save(self.request)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\allauth\account\forms.py", line 540, in save
+    context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\allauth\account\adapter.py", line 137, in send_mail
+    msg.send()
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\mail\message.py", line 291, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\mail\backends\smtp.py", line 103, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\mail\backends\smtp.py", line 63, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "d:\python 3.7.4\lib\smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "d:\python 3.7.4\lib\smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "d:\python 3.7.4\lib\smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "d:\python 3.7.4\lib\socket.py", line 707, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "d:\python 3.7.4\lib\socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+ERROR 2021-05-02 20:36:59,768 log 9376 9468 Internal Server Error: /article/article-list/
+Traceback (most recent call last):
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\DjangoCode\blog_tutorial\article\views.py", line 85, in article_list
+    return render(request, 'article/list.html', context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 698, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "D:\DjangoCode\blog_tutorial\article\templatetags\my_filters_and_tags.py", line 22, in time_since_zh
+    diff = now - value
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+ERROR 2021-05-02 20:37:09,848 log 9376 9468 Internal Server Error: /article/article-list/
+Traceback (most recent call last):
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\DjangoCode\blog_tutorial\article\views.py", line 85, in article_list
+    return render(request, 'article/list.html', context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 698, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "D:\DjangoCode\blog_tutorial\article\templatetags\my_filters_and_tags.py", line 22, in time_since_zh
+    diff = now - value
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+ERROR 2021-05-02 20:37:35,274 log 9376 9468 Internal Server Error: /article/article-list/
+Traceback (most recent call last):
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\DjangoCode\blog_tutorial\article\views.py", line 85, in article_list
+    return render(request, 'article/list.html', context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 698, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "D:\DjangoCode\blog_tutorial\article\templatetags\my_filters_and_tags.py", line 22, in time_since_zh
+    diff = now - value
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+ERROR 2021-05-02 20:38:47,397 log 9376 9468 Internal Server Error: /article/article-list/
+Traceback (most recent call last):
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\DjangoCode\blog_tutorial\article\views.py", line 85, in article_list
+    return render(request, 'article/list.html', context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\LZ.DESKTOP-LSHA4SD\Envs\blog_tutorial\lib\site-packages\django\template\base.py", line 698, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "D:\DjangoCode\blog_tutorial\article\templatetags\my_filters_and_tags.py", line 22, in time_since_zh
+    diff = now - value
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+WARNING 2021-05-02 20:40:08,632 log 9376 9468 Not Found: /aadmin
